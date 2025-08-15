@@ -1,13 +1,125 @@
-<!DOCTYPE NETSCAPE-Bookmark-file-1>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
-<TITLE>Bookmarks</TITLE>
-<H1>Bookmarks</H1>
-<DL><p>
-    <DT><H3 ADD_DATE="1755052475" LAST_MODIFIED="1755067038" PERSONAL_TOOLBAR_FOLDER="true">Home</H3>
-    <DL><p>
-        <DT><H3 ADD_DATE="1755067033" LAST_MODIFIED="1755067047">Folder</H3>
-        <DL><p>
-            <DT><A HREF="http://localhost/mark/" ADD_DATE="1755067044">mark</A>
-        </DL><p>
-    </DL><p>
-</DL><p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Offline Player - Your Personal Offline Music Player</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for modern icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Use Inter font family and set dark theme background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark gray background */
+            color: #F9FAFB; /* Light gray text */
+        }
+        /* Add gradient background to hero section */
+        .hero-gradient {
+            background: radial-gradient(ellipse at top, rgba(59, 130, 246, 0.2), transparent 60%), #111827;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900/50 backdrop-blur-lg fixed w-full z-20 top-0 start-0 border-b border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"></path></svg>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Music Offline Player</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="https://apps.apple.com/us/app/music-player-offline-song/id6747886927" target="_blank" rel="noopener noreferrer" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors inline-flex items-center">Download Now</a>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li><a href="#" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Home</a></li>
+                    <li><a href="#features" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:hover:text-blue-500 md:p-0">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient pt-32 pb-20">
+            <div class="max-w-screen-xl mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                    Your Music, Your Rules.<br class="hidden md:block"> No Internet Required.
+                </h1>
+                <p class="max-w-2xl mx-auto mb-8 text-lg text-gray-400">
+                    Listen to your favorite music anytime, anywhere. Music Offline Player frees you from the constraints of the internet for a pure music experience.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-gray-900">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Features Designed For You</h2>
+                    <p class="mt-4 text-lg text-gray-400">We focus on providing the most essential and pure music playback experience.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1: Offline Playback -->
+                    <div class="bg-gray-800 p-8 rounded-xl text-center transition-all duration-300 hover:bg-gray-700 hover:scale-105">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600 mx-auto mb-6">
+                            <i data-lucide="wifi-off" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Offline Playback</h3>
+                        <p class="text-gray-400">No Wi-Fi or mobile data needed. Listen to your music library anytime, anywhere.</p>
+                    </div>
+                    <!-- Feature 2: Create Playlists -->
+                    <div class="bg-gray-800 p-8 rounded-xl text-center transition-all duration-300 hover:bg-gray-700 hover:scale-105">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600 mx-auto mb-6">
+                            <i data-lucide="list-music" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Create Playlists</h3>
+                        <p class="text-gray-400">Easily organize and create your own custom playlists for any mood or occasion.</p>
+                    </div>
+                    <!-- Feature 3: High-Quality Audio -->
+                    <div class="bg-gray-800 p-8 rounded-xl text-center transition-all duration-300 hover:bg-gray-700 hover:scale-105">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600 mx-auto mb-6">
+                            <i data-lucide="audio-lines" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">High-Quality Audio</h3>
+                        <p class="text-gray-400">Supports various popular audio formats for a crystal-clear sound experience.</p>
+                    </div>
+                    <!-- Feature 4: Simple Interface -->
+                    <div class="bg-gray-800 p-8 rounded-xl text-center transition-all duration-300 hover:bg-gray-700 hover:scale-105">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600 mx-auto mb-6">
+                            <i data-lucide="smartphone" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Simple Interface</h3>
+                        <p class="text-gray-400">An intuitive and easy-to-use design for a smooth and seamless listening experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700">
+        <div class="max-w-screen-xl mx-auto py-8 px-4 text-center text-gray-400">
+            <p>&copy; 2025 CARBEECO SERVICE Company. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="musicplayer-privacy-policy.html" class="hover:text-white underline">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Activate Lucide icons
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
+
